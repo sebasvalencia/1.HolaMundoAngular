@@ -1,9 +1,18 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    selector:'app-body',
+    selector: 'app-body',
     templateUrl: './body.component.html'
 })
-export class BodyComponent{
+export class BodyComponent {
+
+    mostrar: boolean = false;
+
+    frase: any = {
+        mensaje: "Un gan poder require una gran resposabilidad",
+        autor: "Ben Parker"
+    }
+
+    personajes: string[] = ["Spiderman", "Venom", "Dr.Octopus"];
 
 }
